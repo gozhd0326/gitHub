@@ -1,0 +1,7 @@
+List<Content> contentByNickNameinTargetId = owsService. getContentByNickNameinTargetId(targetId,nickName);
+
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-11-27T12:20:49.331+09:00 ERROR 2572 --- [           main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'owsController' defined in file [C:\Users\admin\Documents\ows\owsBackEnd\target\classes\com\ows\owsBackEnd\controller\OwsController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'owsServiceImpl' defined in file [C:\Users\admin\Documents\ows\owsBackEnd\target\classes\com\ows\owsBackEnd\service\impl\OwsServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'contentRepository' defined in com.ows.owsBackEnd.repository.ContentRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.List com.ows.owsBackEnd.repository.ContentRepository.getContentByNickNameinTargetId(java.lang.String,java.lang.String); Reason: Failed to create query for method public abstract java.util.List com.ows.owsBackEnd.repository.ContentRepository.getContentByNickNameinTargetId(java.lang.String,java.lang.String); No property 'nickNameinTargetId' found for type 'Content'
